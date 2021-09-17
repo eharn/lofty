@@ -3,16 +3,16 @@ const weeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 const links = [
     {
         name: "Weekly Exercise",
-        folder : "/assignment1/index.html",
+        folder : "assignment1/index.html",
         journal : "Journal",
-        folder2 : "/assignment1/journal.html"
+        folder2 : "assignment1/journal.html"
 
     },
    {
         name: "Weekly Exercise",
-        folder: "/assignment2/index.html",
+        folder: "assignment2/index.html",
         journal : "Journal",
-        folder2 : "/assignment2/jounral.html"
+        folder2 : "assignment2/jounral.html"
         
     }  
 ]
