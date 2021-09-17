@@ -34,5 +34,5 @@ a:visited {
 ol {
     font-size: 15px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
