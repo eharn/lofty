@@ -23,6 +23,10 @@ body {
     color: cadetblue;
 }
 
+h2 {
+    color: rgb(6, 75, 74);
+}
+
 a:visited {
     color: cadetblue;
 }
