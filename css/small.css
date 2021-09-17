@@ -1,0 +1,38 @@
+
+header {
+    display: block;
+    font-size: 15px;
+    background-color: cadetblue;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    
+}
+img {
+    width: 200px;
+    box-shadow: 8px 8px 8px black;
+    max-width: 100%;
+    height:auto;  
+}
+
+div {
+    display: block;
+    text-align: center;
+}
+
+body {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+a:visited {
+    color: cadetblue;
+}
+
+ol {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
