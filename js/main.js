@@ -8,13 +8,13 @@ const links = [
         folder2 : "assignment1/journal.html"
 
     },
-  /* {
+   {
         name: "Weekly Exercise",
         folder: "assignment2/index.html",
         journal : "Journal",
-        folder2 : "assignment2/jounral.html"
+        folder2 : "assignment2/journal.html"
         
-    }  */
+    }  
 ]
 let i = 0;
 const list = document.getElementById("list");
