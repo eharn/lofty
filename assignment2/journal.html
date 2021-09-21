@@ -15,20 +15,124 @@
   </head>
   <body>
     <header class="name">
-      <h1>Eleanor Lofgreen: Week 1 Journal</h1> </header>
-      <br>
-      <hr>
-      <br>
-      <h2></h2>
-      <p>
- 
-          </p>
-          <br>
-          <br>
-          <br>
-      
-            <br>
-            <footer>
-            <hr>
-            <hr>
-          </footer>
+      <h1>Eleanor Lofgreen: Week 1 Journal</h1> 
+    </header>
+    
+    <main>
+      <div>
+        <br>
+        <hr>
+        <br>
+      </div>
+      <h2>Ch 2: Programming Baiscs</h2>
+      <h3>Comments:</h3>
+      <p>Single line comments start with // and finish at the end of the line of code:<br>
+        // this is a short comment <br><br>
+        Multiline comments start with /* and end with */: <br>
+        /* This is a longer comment <br>
+        but anything on the lines between <br>
+        the comments will be ignored. <br>
+        */<br>
+        <br>
+      </p>
+        <h3>Grammar:</h3>
+        <p>
+          ASI: Automatic Semicolon Insertion<br>
+          This means that each line of code with assume that it has a ; at the end. <br>
+          However, some validators and such won't work without all the appropriate semicolons.<br>
+          <strong>Best Practice is to end each statement with a semi-colon and start a new line.</strong><br><br>
+        </p>
+
+        <h3>Reserved Words:</h3>
+          <p>This list of words can not be used for variable names, function parameters, object properties etc:<br>
+          These words are reserved for use JS language:<br>
+          abstract, await, boolean, break, byte, case, catch, char, class, const, continue, debugger, 
+          default, delete, do, double, else, enum, export, extends, false, final, finally, float, for, 
+          function, goto, if, implements, import, in instanceof, int, interface, let, long, native, new, null, 
+          package, private, protected, public, return, short, static, super, switch, synchronized, this, throw, 
+          throws, transient, true, try, typeof, var, volatile, void, while, with, and yield<br>
+          <strong>Best Practice is to also not use undefined, NaN, and Infinity.</strong><br><br>
+        </p>
+
+          <h3>Primitive Data Types:</h3>
+        <p>
+          JavaScipt has 7 data types:<br>
+          Six are Primaitve Data Types: String, Symbol, Number, Boolean, Undefined, and Null <br>
+          If any value isn't one of these it will be an <strong>object</strong><br>
+          To figure out the type of a value you can use <strong>typeof</strong> and it will return the type of data type.<br><br>
+        </p>
+
+        <h3>Declaring and Assigning:</h3>
+        <p>From ES6 onward, JavaScipt uses <strong>const</strong> and <strong>let</strong> to declare variables. These are blocked scoped, meaning their value only exists insid eth block they are declared in.<br>
+          <strong>const</strong> is used to assign a variable that will not be reassigned any other value.<br>
+          <strong>let</strong> is used if the variable might be reassigned later in the program.<br>
+          <strong>var is no longer Best Practice.</strong>
+          You can also assign multiple values at once using commas. Ex: let x=3, y=4, z=5;<br>
+          <strong>If a variable references an object using const doesn't make it unchangable. The data in an object can change/mutate.</strong><br><br>
+          Ex:<br>const name = { value: 'Alexa' }; // an object <br>
+          name.value = 'Siri'; // change the value<br>
+          << 'Siri'<br><br>
+
+          However, using const on an object means you can't reassign a variable to another object.<br><br>
+          Ex: // declare object  <br>
+          const name = { value: 'Alexa' };<br>
+          // attempt to reassign to another object<br>
+          name = { value: 'Siri' }<br>
+          << TypeError: Assignment to constant variable.<br><br>
+        </p>
+        <h3>Other Must knows:</h3>
+        <p>Constant and varaible names can start with an upper or lower-case letter, an underscore, or dollar character. You can also use letters but can't start with a number. <br>
+        Avoid starting with an underscore and using the $ character for other programs and frameworks use them.<br>
+        Be consistent! <strong>Using Camel case is Best Practice.</strong> Start with lowercase letter and then uppercase at the start of every new word. Also use underscoreds to separate each new word.<br>
+        </p><br><br>
+        <p>
+          <strong>Backslashes: must be used to escape special character in strings.</strong>
+          <ul>
+            <li>sing quote marks: \'</li>
+            <li>double quote marks: \"</li>
+            <li>end of line: \n</li>
+            <li>carriage return: \r</li>
+            <li>tab: \t</li>
+            <li>backslash: \\</li>
+          </ul>
+        </p><br><br>
+        
+          <h4>Dot Notation:</h4>
+          <p>
+            Access properties of a string by writing a dot followed by the property we are interested in. Such as the length property.<br>
+            variable.length returns the length of the string.
+        </p><br><br>
+        <p>
+          Don't forget about methods! You can use dot notation to use them and they end in (). This allows you to manipulate a string and gain
+          info about them. If the thing you are looking for returns a -1 then they don't appear in the string. Method includes() returns 
+          ture or false if character you're looking for is included in the sting or not.
+        </p><br><br>
+
+        <p>
+          The concat() method can concatenate two or more strings together.Ex: 'JavaScript'.concat('Ninja'); returns 'JavaScriptNinja'<br>
+          Or the short hand is to use + between strings. Ex: 'Java' + 'Script' + '' + 'Ninja'; returns 'JavaScript Ninja'
+        </p><br><br>
+
+        <h4>Template Literals:</h4>
+        <p>template literals are a special string using  the backtick character `` which makes it possible to use both sets of quote in the string '' and "",br>
+          They also allow interpolation of JavaScipt code. Meaning a JavaScipt expression can be inserted inside a string and the result will be displayed:<br>
+        Ex: <br>
+        const name = `Siri`;<br>
+        `Hello ${ name }!`; <br>
+          << 'Hello Siri!'<br><br>
+
+          const age = 39;<br>
+        `I will be ${ age + 1 } next year`;<br>
+          << 'I will be 40 next year'<br>
+        <br>
+        The JavaScript is place inside the curly braces with a $ character infront of them. You can include line breaks with \n in a string.
+       </p>
+
+
+
+      </main>
+        <footer>
+        <hr>
+        <hr>
+       </footer>
+       </body>

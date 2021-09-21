@@ -36,3 +36,6 @@ ol {
     display: grid;
     grid-template-columns: 1fr;
 }
+strong {
+    color: rgb(6, 75, 74);
+}
