@@ -9,7 +9,7 @@ const links = [
 
     },
    {
-        name: "Weekly Exercise",
+        name: "Team Activity",
         folder: "assignment2/index.html",
         journal : "Journal",
         folder2 : "assignment2/journal.html"
