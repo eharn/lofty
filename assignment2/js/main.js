@@ -1,8 +1,7 @@
-function readContent() {
+/*function readContent() {
     const userInput = parseInt(document.getElementById("userInput").value);
     const total = getNumber(userInput);
     document.getElementById("userOutput").innerHTML = total;
-
 }
 
 function getNumber(number) {
@@ -29,3 +28,41 @@ subtract = function() {
     document.getElementById("userOutput").innerHTML = answer;
 }
 
+*/
+
+const getFirstInteger = () =>  {
+    const userInput = parseInt(document.getElementById("userInput").value);
+    return userInput;
+}
+
+const getSecondInteger = () =>  {
+    const newInput = parseInt(document.getElementById("newInput").value);
+    return newInput;
+} 
+
+function readContent() {
+    const integer = getFirstInteger(userInput);
+    const total = getNumber(integer);
+    document.getElementById("userOutput").innerHTML = total;
+}
+
+function getNumber(number) {
+    let sum = 0;
+    for(let i = 1; i <= number; i++){
+        sum += i;
+    }
+    return sum;
+}
+
+
+function addFunction() {
+    const a = getFirstInteger(userInput);
+    const b = getSecondInteger(newInput);
+    let sum = a+b;
+    document.getElementById("userOutput").innerHTML = sum;
+}
+
+
+const subtact = () => {
+    
+}
