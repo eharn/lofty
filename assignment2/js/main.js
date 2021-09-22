@@ -1,6 +1,6 @@
 function readContent() {
-    let userInput = parseInt(document.getElementById("userInput").value);
-    let total = getNumber(userInput);
+    const userInput = parseInt(document.getElementById("userInput").value);
+    const total = getNumber(userInput);
     document.getElementById("userOutput").innerHTML = total;
 
 }
@@ -19,4 +19,13 @@ function addFunction() {
     let sum = a+b;
     document.getElementById("userOutput").innerHTML = sum;
 }
- function subtract() {}
+
+
+subtract = function() {
+    let a = parseInt(document.getElementById("userInput").value);
+    let b = parseInt(document.getElementById("newInput").value);
+ 
+    let answer = a-b;
+    document.getElementById("userOutput").innerHTML = answer;
+}
+
