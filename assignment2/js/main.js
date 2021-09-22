@@ -1,4 +1,5 @@
-/*function readContent() {
+
+function readContent() {
     const userInput = parseInt(document.getElementById("userInput").value);
     const total = getNumber(userInput);
     document.getElementById("userOutput").innerHTML = total;
@@ -28,9 +29,9 @@ subtract = function() {
     document.getElementById("userOutput").innerHTML = answer;
 }
 
-*/
 
-const getFirstInteger = () =>  {
+
+/* const getFirstInteger = () =>  {
     const userInput = parseInt(document.getElementById("userInput").value);
     return userInput;
 }
@@ -64,5 +65,38 @@ function addFunction() {
 
 
 const subtact = () => {
-    
+
 }
+*/
+
+/* Solution
+
+function getNum(numId){
+    const number = document.getElementById(numId).value;
+    const numberFloat = parseFloat(number);
+    if (numberFloat !== NaN) {
+    return numberFloat;
+    } else return 0;
+    }
+function updateTotal(value) {
+    const outputElement = document.getElementById('stretchOutput');
+     outputElement.innerHTML = 'Total: ' + value;
+    }
+function add2(num1, num2) {
+     return num1 + num2;
+     }
+const sub2 = function (num1, num2) {
+     return num1- num2;
+     }
+const mult2 = (num1, num2) => num1 * num2;
+const div2 = (num1, num2) => num1 / num2;
+   
+function performOperation(operation) {
+    const total = operation(
+        getNum('stretchNumber1'),
+     getNum('stretchNumber2')
+    );
+updateTotal(total);
+}
+
+*/
