@@ -16,20 +16,16 @@
 <input type="text" id="newInput" name="textField">
 
 <button id="button" onclick="readContent()">Click Me</button>
-<button id="add" onclick="addFunction()">+</button>
-<button id="subtract" onclick="subtract()">-</button>
-<button id="multiply" onclick="multiply()">*</button>
-<button id="division" onclick="division()">/</button>
+<button id="add" onclick="performOperation(addFunction)">+</button>
+<button id="subtract" onclick="performOperation(subtract)">-</button>
+<button id="multiply" onclick="performOperation(multiply)">*</button>
+<button id="division" onclick="performOperation(divide)">/</button>
 
 <div id="userOutput">
 
 </div>
-
-
-
-
- 
-   
+<script src="js/main.js"></script>
   </body>
-  <script src="js/main.js"></script>
+ 
 </html>
+
