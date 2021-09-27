@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="code pratice - Brigham Young University-Idaho"/>
+    
+    <title>Code Practice - Week 3</title>
+    <link rel="stylesheet" href="css/small.css" />
+</head>
+  
+<body>
+
+    <input type="text" id="userInput" name="textField"> 
+    <input type="text" id="newInput" name="textField">
+
+    <button id="button" onclick="readContent()">Click Me</button>
+    <button id="add" onclick="performOperation(addFunction)">+</button>
+    <button id="subtract" onclick="performOperation(subtract)">-</button>
+    <button id="multiply" onclick="performOperation(multiply)">*</button>
+    <button id="division" onclick="performOperation(divide)">/</button>
+
+    <div id="userOutput">
+
+</div>
+
+    <script>
+
+        let calculator = {
+            sum() {
+                return this.a + this.b;
+            },
+
+            mul() {
+                return this.a * this.b;
+            },
+
+            sub() {
+                return this.a - this.b;
+            },
+
+            div() {
+                return this.a / this.b;
+            },
+
+            read() {
+                this.a = +prompt('a?', 0);
+                this.b = +prompt('b?', 0);
+            }
+
+        };
+
+    </script>
+
+  </body>
+ 
+</html>
+
