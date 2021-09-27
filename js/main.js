@@ -14,7 +14,14 @@ const links = [
         journal : "Journal",
         folder2 : "assignment2/journal.html"
         
-    }  
+    },
+    {
+        name: "Team Activity",
+        folder: "assignment3/index.html",
+        journal : "Journal",
+        folder2 : "assignment2/journal.html"
+        
+    }    
 ]
 let i = 0;
 const list = document.getElementById("list");
