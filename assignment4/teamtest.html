@@ -80,9 +80,17 @@
       let count = 0;
       
       const clickArea = document.querySelectorAll('.box');
-      //console.log(clickArea);
+      console.log(clickArea);
+      
+      
+
       for (let i = 0; i < clickArea.length; i++) {
           clickArea[i].addEventListener('click', boxClick);
+          const boxid = clickArea[i].id;
+          
+          
+
+       
       }
 
 
@@ -119,7 +127,10 @@
           [2,4,6]
       ];
       function checkWinner() {
-        // Tanner/Ben wanted to write this later
+        for (let i = 0; i < clickArea.length; i++) {
+        const content = document.clickArea[i].textContent;
+        console.log(content);
+        }
       }
       const butt = document.querySelector('button').addEventListener('click', () => {
         window.location.reload();
