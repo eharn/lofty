@@ -36,3 +36,19 @@ ol {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+p {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ccc;
+}
+
+.highlight {
+    background-color: red;
+}
