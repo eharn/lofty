@@ -6,25 +6,25 @@ header {
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
-    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     
 }
 img {
-    width: 300px;
+    width: 200px;
     box-shadow: 8px 8px 8px black;
     max-width: 100%;
     height:auto;  
 }
 
+div {
+    display: block;
+    text-align: center;
+}
 
 body {
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     padding: 30px;
-    color: cadetblue;
-}
-
-h2, h3 {
-    color: rgb(6, 75, 74);
 }
 
 a:visited {
@@ -34,21 +34,5 @@ a:visited {
 ol {
     font-size: 15px;
     display: grid;
-    grid-template-columns: 1fr;
-}
-
-div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr)
-}
-
-p {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    background-color: #ccc;
-}
-
-.highlight {
-    background-color: red;
+    grid-template-columns: 1fr 1fr;
 }
