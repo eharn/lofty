@@ -34,30 +34,17 @@ const hikeList = [
         'Take Highway 20 north to Ashton. Turn right into the town and continue through. Follow that road for a few miles then turn left again onto the Cave Falls road. Drive to until you see the sign for Bechler Meadows on the left. Turn there. There is a parking area at the trailhead.'
     }
 ];
-// Hike Model
+
+//create a hikemodel class
 export default class HikeModel {
-  constructor() {
-    // We need a constructor...but in this case it isn't doing much
-    const hikeList = hikeList[0];
-    class Hike {
-        constructor(hikeName) {
-            this.nameName = hikeList.nameName;
-        }
+ 
+    getAllHikes() {
+      return hikeList;//populate class with hikelist
     }
-  }
-  getAllHikes() {
-    // should return a list of all the hikes.
-    var hikeName = [];
-    hikeList.forEach(function (Object) {
-        hikeName.push(Object.name);
-    })
-
-    return hikeName;
-  }
-  getHikeByName(hikeName) {
-    // filter the hikes for the record identified by hikeName and return it
-    
-
-
-  }
-}
+  
+    getHikeByName(name) {
+      return hikeList.find(hike => hike.name === name); //get names of every hike from hikelist, returns as variable name
+    }
+  
+  
+};

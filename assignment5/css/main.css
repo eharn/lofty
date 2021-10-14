@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(201, 232, 227);
+}
+
+h1 {
+    display: block;
+    font-size: 45px;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: cadetblue;
+    padding-top: 20px;
+    border: 4px solid white;
+    box-shadow: 4px 4px 8px cadetblue;
+}
+
+img {
+    width: 320px;
+    box-shadow: 4px 4px 8px cadetblue;
+}
+
+.fullimg {
+    justify-self: center;
+}
+
+  .hikeStyles {
+    padding: 15px;
+    margin: 0px;
+    list-style-type: none;
+  }
+
+  .hikeStyles li h2 { 
+    color: rgb(20, 83, 85);
+  }
+
+  .light li {
+  display: flex;
+  }
+
+  li {
+      display: grid;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      box-shadow: 4px 4px 8px cadetblue;
+      
+  }
+ h2 {
+     margin-top: 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: white;
+    padding-bottom: 8px;
+  }
+
+  .light div {
+      display: flex;
+    flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .light p {
+      padding-top: 6px;
+  }
+
+.light .info div {
+      display: block;
+  }
+
+  .light h3 {
+    margin-bottom: -0.5em;
+  }
+  
+  h2, h3, p {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0px;
+  }
+
+  p {
+      padding-bottom: 20px;
+  }
+
+  h3 {
+      padding-top: 10px;
+  }
