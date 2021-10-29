@@ -38,9 +38,9 @@ const links = [
     },
     {
         name: "Team Activity",
-        folder: "assignment6/teamactivity.html",
+        folder: "assignment7/teamactivity.html",
         journal : "Journal",
-        folder2 : "assignment6/journal.html"
+        folder2 : "assignment7/journal.html"
         
     }                
 
