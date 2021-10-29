@@ -38,7 +38,7 @@ const links = [
     },
     {
         name: "Team Activity",
-        folder: "assignment7/teamactivity.html",
+        folder: "assignment7/hiking-complete.html",
         journal : "Journal",
         folder2 : "assignment7/journal.html"
         
@@ -51,20 +51,27 @@ const list = document.getElementById("list");
 links.forEach(getAssignments);
 
 function getAssignments() {
-
+ 
     const li = document.createElement('li');
     const a = document.createElement('a');
     const b = document.createElement('a');
+   
 
     a.innerHTML = links[i].name;
     b.innerHTML = "<br>" + links[i].journal;
     a.setAttribute('href', links[i].folder);
     b.setAttribute('href', links[i].folder2);
+
+    if(i === 5){
+    li.setAttribute('value', "7");
+    }
+
     li.appendChild(a);
     li.appendChild(b);
     list.appendChild(li);
 
     i ++;
+
+
+
 }
-
-
