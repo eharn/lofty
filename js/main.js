@@ -49,7 +49,14 @@ const links = [
         journal : "Journal",
         folder2 : "assignment8/journal.html"
         
-    }                 
+    },
+    {
+        name: "Team Activity",
+        folder: "assignment9/teamactivity.html",
+        journal : "Journal",
+        folder2 : "assignment9/journal.html"
+        
+    }                      
 
 ]
 let i = 0;
