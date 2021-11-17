@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="test code WDD 330: Web Frontend Development by Ellie Lofgreen and Brigham Young University-Idaho"
+    />
+    <link rel='stylesheet' href='css/style.css'>
+    <title>test code</title>
+
+   
+  </head>
+  <body>
+    <header class="name">
+      <h1>Test Code:</h1> 
+
+    </header>
+
+    <h2>All Fetch Tests in console</h2>
+
+    <h2>All Validation Code Tests Below:</h2>
+
+    <form>
+        <div>
+        <label for="souporsalad">Would you prefer soup or salad?</label>
+        <input id="souporsalad" name="choice" required pattern="[Ss]oup|[Ss]alad" minlength="4" maxlength="5" >
+    </div>
+    <div>
+        <label for="number">How many ounces you like?</label>
+    <input type="number" id="number" name="amount" value="4" min="1" max="10" required>
+    </div>
+        <button>Submit</button>
+      </form>
+   
+
+      <form>
+        <label for="email">Pretty Please Give Me Your Email Address:</label>
+        <input type="email" id="email" name="email">
+        <button>Submit</button>
+      </form>
+
+
+      <!-- <form novalidate>
+        <p>
+          <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="email" id="mail" name="mail" required minlength="8">
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <button>Submit</button>
+      </form> -->
+
+      <form>
+        <p>
+          <label for="mail">
+              <span>Please enter an email address:</span>
+              <input type="text" id="mail" name="mail">
+              <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <!-- Some legacy browsers need to have the `type` attribute
+             explicitly set to `submit` on the `button`element -->
+        <button type="submit">Submit</button>
+      </form>
+
+
+
+        <footer>
+        <hr>
+        <hr>
+       </footer>
+       <script src="js/testcode.js"></script>
+       </body>
+       </html>

@@ -1,0 +1,17 @@
+input:invalid {
+    border: 2px dashed rgb(255, 217, 0);
+  }
+  
+  input:invalid:required {
+    background-image: linear-gradient(to right, rgb(243, 20, 53), rgb(10, 204, 120));
+  }
+  
+  input:valid {
+    border: 2px solid rgb(0, 0, 0);
+  }
+
+  input, button{
+      margin: 20px;
+  }
+
+  
