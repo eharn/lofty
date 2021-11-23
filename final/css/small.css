@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* opening page */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+#greeting {
+    font-size: 46px;
+    color: rgb(42, 242, 212);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: rgba(10, 32, 162, 0.81);
+    align-items: center;
+}
+
+.content input {
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: rgba(10, 33, 162, 0.221);
+    width: 100%;
+}
+
+.content img {
+    width: 64px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(252, 250, 247);
+    color: rgba(10, 32, 162, 0.81);
+}
+
+hr {
+    color: rgba(10, 32, 162, 0.81);
+
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+img {
+    padding: 20px;
+    margin: 10px;
+}
+
+.main:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: knock 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes knock {
+    0% {
+        transform: translate(.5px, .5px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-.5px, -1px) rotate(-.5deg);
+    }
+
+    20% {
+        transform: translate(-2px, 1px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(2px, 1px) rotate(.5deg);
+    }
+
+    40% {
+        transform: translate(.5px, -.5px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-.5px, 1px) rotate(-.5deg);
+    }
+
+    60% {
+        transform: translate(-1px, .5px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(2px, .5px) rotate(-.5deg);
+    }
+
+    80% {
+        transform: translate(-.5px, -.5px) rotate(.5deg);
+    }
+
+    90% {
+        transform: translate(.5px, 1px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(.5px, -1px) rotate(-1deg);
+    }
+}
+
+
+
+#fist1 {
+
+    margin-top: 20px;
+
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.2s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(.5px, .5px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(.5px, -1px) rotate(-1deg);
+    }
+}
+
+#umbrella2 {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: flip 4s ease-in-out;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes flip {
+    0% {
+        transform:  rotate(0deg);
+    }
+
+    25% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(.5px, -1px) rotate(360deg);
+    }
+}
+
+#umbrella:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: flip 3s ease-in-out;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes flip {
+    0% {
+        transform:  rotate(0deg);
+    }
+
+    10% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(.5px, -1px) rotate(360deg);
+    }
+}
+
+.coat2 {
+    animation: jump .5s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0px,20px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+   
+}
+
+#coat:hover {
+    animation: jump .5s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0px,20px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+   
+}
+
+#swim:hover {
+    animation: swim 2s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(0px, 10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-0px, -10px) rotate(-.5deg);
+    }
+}
+
+.swim {
+    animation: swim 2s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(0px, 10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-0px, -10px) rotate(-.5deg);
+    }
+}
+
+#shoes:hover {
+    animation: kick .5s infinite;
+    
+    animation-direction: alternate;
+    transform-origin: 20%;
+    
+}
+
+@keyframes kick {
+    0% {
+        transform:rotate(-10deg);
+    }
+   100% {
+       transform:rotate(0px);
+   }
+   
+}
+
+.shoes {
+    animation: kick .5s infinite;
+    
+    animation-direction: alternate;
+    transform-origin: 20%;
+    
+}
+
+@keyframes kick {
+    0% {
+        transform:rotate(-10deg);
+    }
+   100% {
+       transform:rotate(0px);
+   }
+   
+}
+
+
+#ask {
+    font-family: 'Indie Flower';
+    background-color: rgba(10, 32, 162, 0.81);
+    ;
+    font-size: 12px;
+    color: white;
+    padding: 6px;
+    width: 40%;
+    margin: 10px;
+}
+
+
+#output p {
+    padding: 0px;
+}
+
+.uresult {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.uresult p {
+    margin: 0px;
+    margin-top: 25px;
+}
+
+.uresult p2 {
+    margin-bottom: 25px;
+}
+
+.uresult {
+    font-size: 35px;
+}
+
+.uresult img {
+    width: 64px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    font-size: 8px;
+}

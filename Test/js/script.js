@@ -11,7 +11,7 @@ class item {
 }
 
 function store() {
-    const itemValue = document.querySelector("#listItem").value
+    const itemValue = document.querySelector("#listItem").value;
     document.querySelector('#output').innerHTML = '';
 
     if (itemValue === '') {
