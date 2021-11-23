@@ -1,4 +1,6 @@
-const requestURL = 'http://api.weatherapi.com/v1/forecast.json?key=dea13e10e1c24754884233043210711&q=83440&days=3&aqi=no&alerts=no';
+const zip = localStorage.getItem('zip');
+
+const requestURL = `http://api.weatherapi.com/v1/forecast.json?key=dea13e10e1c24754884233043210711&q=${zip}&days=3&aqi=no&alerts=no`;
 
 fetch(requestURL)
   .then(function (response) {

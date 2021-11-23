@@ -7,7 +7,17 @@
 }
 
 h1 {
+    margin-top: 60px;
+}
+
+#open {
     margin-top: 40px;
+}
+
+a:link, a:visited, a:hover, a:active {
+   color: rgba(10, 32, 162, 0.81);
+   text-decoration: none;
+    
 }
 
 #greeting {
@@ -17,7 +27,7 @@ h1 {
     margin-top: 0px;
 }
 
-.content {
+.content, p {
     display: flex;
     flex-direction: column;
     color: rgba(10, 32, 162, 0.81);
@@ -44,10 +54,15 @@ body {
     align-items: center;
     background-color: rgb(252, 250, 247);
     color: rgba(10, 32, 162, 0.81);
+    text-align: center;
 }
 
 hr {
+    margin: 0px auto;
     color: rgba(10, 32, 162, 0.81);
+    margin-top: 40px;
+    width: 50%;
+    
 
 }
 
@@ -328,15 +343,62 @@ img {
     width: 64px;
 }
 
+#packup {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.countDown img {
+    width: 64px;
+    margin: 40px;
+    padding-top: 20px;
+}
+
+.countContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+    
+}
+.countContainer div {
+    margin: 4px;
+    background-color: crimson;
+    color: white;
+    width: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid rgba(10, 32, 162, 0.81);
+}
+
+.countContainer p {
+    color: white;
+}
+
+#sleigh {
+    position: absolute;
+    margin-top: 220px;
+    animation: fly 5s infinite;
+    animation-direction: normal;
+}
 
 
-
-
-
-
+@keyframes fly {
+    0% {
+        transform: translate(-210px);
+    }
+   100% {
+       transform:translate(210px);
+   }
+   
+}
 
 
 
 footer {
     font-size: 8px;
+    
 }
