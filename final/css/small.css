@@ -380,9 +380,10 @@ img {
 
 #sleigh {
     position: absolute;
-    margin-top: 220px;
+    margin-top: 340px;
     animation: fly 5s infinite;
     animation-direction: normal;
+
 }
 
 
@@ -394,6 +395,20 @@ img {
        transform:translate(210px);
    }
    
+}
+
+#headerSound {
+    display: flex;
+}
+
+#headerSound img{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    height: 30px;
+    width: 30px;
+    margin-top: 66px;
+    
 }
 
 

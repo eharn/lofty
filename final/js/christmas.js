@@ -1,3 +1,23 @@
+
+ let bells = new Audio("audio/Sleigh-bells-ringing-sound-effect.mp3");
+    const sound = document.querySelector('#sound');
+    const mute = document.querySelector('#mute');
+
+    mute.style.display = "none";
+
+    sound.addEventListener("click", () => {
+      sound.style.display = "none";
+      mute.style.display = "block";
+      bells.play();
+    })
+
+
+    mute.addEventListener("click", () => {
+      sound.style.display = "block";
+      mute.style.display = "none";
+      bells.pause();
+    })
+
 let today = new Date();
 let deadline = new Date(today.getFullYear(), 11, 25).getTime();
 
