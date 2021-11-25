@@ -61,7 +61,7 @@ hr {
     margin: 0px auto;
     color: rgba(10, 32, 162, 0.81);
     margin-top: 40px;
-    width: 50%;
+    width: 70%;
     
 
 }
@@ -306,7 +306,6 @@ img {
 #ask {
     font-family: 'Indie Flower';
     background-color: rgba(10, 32, 162, 0.81);
-    ;
     font-size: 12px;
     color: white;
     padding: 6px;
@@ -386,6 +385,30 @@ img {
 
 }
 
+.birthContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+    
+}
+
+.birthContainer div {
+    margin: 4px;
+    background-color: rgba(10, 32, 162, 0.81);
+    color: white;
+    width: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid ;
+}
+
+.birthContainer p {
+    color: white;
+}
 
 @keyframes fly {
     0% {

@@ -10,7 +10,7 @@ function store() {
     const zip = document.querySelector('#zip').value;  
     
     if(name === '' || bday === '' || zip === '') {
-        document.querySelector('#output').innerHTML = `<p>Please enter your name, birthdate, and zip</p>`;
+        document.querySelector('#output').innerHTML = `<p>Please enter your name, birthdate, and zip</p><br>`;
         return;
     } else {
         localStorage.setItem('name', name);
