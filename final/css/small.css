@@ -14,10 +14,13 @@ h1 {
     margin-top: 40px;
 }
 
-a:link, a:visited, a:hover, a:active {
-   color: rgba(10, 32, 162, 0.81);
-   text-decoration: none;
-    
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: rgba(10, 32, 162, 0.81);
+    text-decoration: none;
+
 }
 
 #greeting {
@@ -27,7 +30,8 @@ a:link, a:visited, a:hover, a:active {
     margin-top: 0px;
 }
 
-.content, p {
+.content,
+p {
     display: flex;
     flex-direction: column;
     color: rgba(10, 32, 162, 0.81);
@@ -62,7 +66,7 @@ hr {
     color: rgba(10, 32, 162, 0.81);
     margin-top: 40px;
     width: 70%;
-    
+
 
 }
 
@@ -78,9 +82,9 @@ img {
     margin: 10px;
 }
 
-.main:hover {
+#christmas:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: knock 0.5s;
+    animation: knock 1s;
 
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
@@ -165,7 +169,7 @@ img {
 
 @keyframes flip {
     0% {
-        transform:  rotate(0deg);
+        transform: rotate(0deg);
     }
 
     25% {
@@ -187,7 +191,7 @@ img {
 
 @keyframes flip {
     0% {
-        transform:  rotate(0deg);
+        transform: rotate(0deg);
     }
 
     10% {
@@ -199,7 +203,7 @@ img {
     }
 }
 
-.coat2 {
+.coat2 , #balloons {
     animation: jump .5s infinite;
     transform: skew(20deg);
     animation-direction: alternate;
@@ -207,36 +211,38 @@ img {
 
 @keyframes jump {
     0% {
-        transform: translate(0px,20px);
+        transform: translate(0px, 20px);
     }
+
     100% {
-        transform: translate(0px,0px);
+        transform: translate(0px, 0px);
     }
-   
+
 }
 
 #coat:hover {
     animation: jump .5s infinite;
     transform: skew(20deg);
     animation-direction: alternate;
-    
+
 }
 
 @keyframes jump {
     0% {
-        transform: translate(0px,20px);
+        transform: translate(0px, 20px);
     }
+
     100% {
-        transform: translate(0px,0px);
+        transform: translate(0px, 0px);
     }
-   
+
 }
 
 #swim:hover {
     animation: swim 2s infinite;
     transform: skew(20deg);
     animation-direction: alternate;
-    
+
 }
 
 @keyframes swim {
@@ -253,7 +259,7 @@ img {
     animation: swim 2s infinite;
     transform: skew(20deg);
     animation-direction: alternate;
-    
+
 }
 
 @keyframes swim {
@@ -268,40 +274,60 @@ img {
 
 #shoes:hover {
     animation: kick .5s infinite;
-    
+
     animation-direction: alternate;
     transform-origin: 20%;
-    
+
 }
 
 @keyframes kick {
     0% {
-        transform:rotate(-10deg);
+        transform: rotate(-10deg);
     }
-   100% {
-       transform:rotate(0px);
-   }
-   
+
+    100% {
+        transform: rotate(0px);
+    }
+
 }
 
 .shoes {
     animation: kick .5s infinite;
-    
+
     animation-direction: alternate;
     transform-origin: 20%;
-    
+
 }
 
 @keyframes kick {
     0% {
-        transform:rotate(-10deg);
+        transform: rotate(-10deg);
     }
-   100% {
-       transform:rotate(0px);
-   }
-   
+
+    100% {
+        transform: rotate(0px);
+    }
+
 }
 
+#birthday:hover {
+    animation: dance .5s infinite;
+
+    animation-direction: alternate;
+    transform-origin: 40%;
+
+}
+
+@keyframes dance {
+    0% {
+        transform: translate(.2px, 2px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(-0px, -2px) rotate(-5deg);
+    }
+
+}
 
 #ask {
     font-family: 'Indie Flower';
@@ -349,7 +375,6 @@ img {
 
 .countDown img {
     width: 64px;
-    margin: 40px;
     padding-top: 20px;
 }
 
@@ -360,13 +385,15 @@ img {
     font-size: 14px;
     font-family: Helvetica, sans-serif;
     justify-content: center;
-    
+
 }
+
 .countContainer div {
     margin: 4px;
     background-color: crimson;
     color: white;
     width: 65px;
+    height: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 4px;
@@ -379,7 +406,7 @@ img {
 
 #sleigh {
     position: absolute;
-    margin-top: 340px;
+    margin-top: 285px;
     animation: fly 5s infinite;
     animation-direction: normal;
 
@@ -392,7 +419,7 @@ img {
     font-size: 14px;
     font-family: Helvetica, sans-serif;
     justify-content: center;
-    
+
 }
 
 .birthContainer div {
@@ -400,10 +427,11 @@ img {
     background-color: rgba(10, 32, 162, 0.81);
     color: white;
     width: 65px;
+    height: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 4px;
-    border: 2px solid ;
+    border: 2px solid;
 }
 
 .birthContainer p {
@@ -412,31 +440,32 @@ img {
 
 @keyframes fly {
     0% {
-        transform: translate(-210px);
+        transform: translate(-220px);
     }
-   100% {
-       transform:translate(210px);
-   }
-   
+
+    100% {
+        transform: translate(240px);
+    }
+
 }
 
 #headerSound {
     display: flex;
 }
 
-#headerSound img{
+#headerSound img {
     margin: 0px;
     padding: 0px;
     padding-left: 10px;
     height: 30px;
     width: 30px;
     margin-top: 66px;
-    
+
 }
 
 
 
 footer {
     font-size: 8px;
-    
+
 }

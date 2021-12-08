@@ -1,9 +1,15 @@
-const birthdate = localStorage.getItem('birthdate');
-
-
-bday = Date.parse(birthdate);
+let birthdate = localStorage.getItem('birthdate');
+let bdt = new Date(birthdate);
+bdt.setHours(24,0,0,0);
+let bday = bdt.getTime();
 console.log(bday);
-var now = new Date().getTime();
+
+var time = new Date();
+var now = time.getTime();
+console.log(now);
+console.log();
+
+
 
 var x = setInterval(function() {
 
