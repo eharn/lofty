@@ -1,13 +1,21 @@
 let birthdate = localStorage.getItem('birthdate');
-let bdt = new Date(birthdate);
-bdt.setHours(24,0,0,0);
-let bday = bdt.getTime();
-console.log(bday);
-
 var time = new Date();
 var now = time.getTime();
-console.log(now);
-console.log();
+
+let bdt = new Date(birthdate);
+bdt.setHours(24,0,0,0);
+
+let year = time.getFullYear();
+let end = new Date(year, 12, 0);
+end.setHours(24,0,0,0);
+
+if (bdt > now && bdt < end ){
+  bdt.setFullYear(year);
+}else {
+  bdt.setFullYear(year+1);
+}
+let bday = bdt.getTime();
+
 
 
 

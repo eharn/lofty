@@ -6,7 +6,7 @@ askbutton.addEventListener('click', store, false);
 function store() {
     const name = document.querySelector('#name').value;
     const bday = document.querySelector('#birthdate').value;
-    console.log('birthday');
+
     // const bday = new Date(birthday).getTime() / 1000;
     const zip = document.querySelector('#zip').value;  
     
