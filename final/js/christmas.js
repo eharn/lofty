@@ -2,6 +2,7 @@
  let bells = new Audio("audio/Sleigh-bells-ringing-sound-effect.mp3");
     const sound = document.querySelector('#sound');
     const mute = document.querySelector('#mute');
+    const home = document.querySelector('.home');
 
     mute.style.display = "none";
 
@@ -16,6 +17,10 @@
       sound.style.display = "block";
       mute.style.display = "none";
       bells.pause();
+    })
+
+    home.addEventListener("click", () => {
+      document.location.href = 'main.html';
     })
 
 let today = new Date();
