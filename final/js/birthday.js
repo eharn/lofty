@@ -4,25 +4,42 @@ const home = document.querySelector('.home');
     })
 
 let birthdate = localStorage.getItem('birthdate');
+console.log(birthdate);
 var time = new Date();
-var now = time.getTime();
+
 
 let bdt = new Date(birthdate);
 bdt.setHours(24,0,0,0);
+console.log(bdt);
 
 let year = time.getFullYear();
 let end = new Date(year, 12, 0);
 end.setHours(24,0,0,0);
-
+console.log(end);
 if (bdt > now && bdt < end ){
   bdt.setFullYear(year);
 }else {
   bdt.setFullYear(year+1);
 }
-let bday = bdt.getTime();
+let timespace = time.getTimezoneOffset();
+let bdtspace = bdt.getTimezoneOffset();
+console.log(timespace);
+console.log(bdtspace);
 
-
-
+if (timespace === bdtspace){
+  var now = time.getTime();
+  var bday = new Date(bdt).getTime();
+  console.log(time);
+} else {
+  var now = time.getTime();
+  var bday = new Date(bdt).getTime();
+  let space = (timespace - bdtspace);
+  console.log(space);
+  let milspace = space * 60000;
+  bday = bday + milspace;
+}
+console.log(bday);
+console.log(now);
 
 var x = setInterval(function() {
 
