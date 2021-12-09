@@ -2,7 +2,7 @@
  let bells = new Audio("audio/Sleigh-bells-ringing-sound-effect.mp3");
     const sound = document.querySelector('#sound');
     const mute = document.querySelector('#mute');
-    const home = document.querySelector('.home');
+    
 
     mute.style.display = "none";
 
@@ -19,8 +19,9 @@
       bells.pause();
     })
 
+    const home = document.querySelector('.home');
     home.addEventListener("click", () => {
-      document.location.href = 'main.html';
+      document.location.href = 'https://eharn.github.io/lofty/final/main.html';
     })
 
 let today = new Date();

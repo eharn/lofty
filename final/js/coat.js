@@ -1,3 +1,8 @@
+const home = document.querySelector('.home');
+    home.addEventListener("click", () => {
+      document.location.href = 'https://eharn.github.io/lofty/final/main.html';
+    })
+
 const zip = localStorage.getItem('zip');
 
 const requestURL = `https://api.weatherapi.com/v1/forecast.json?key=dea13e10e1c24754884233043210711&q=${zip}&days=3&aqi=no&alerts=no`;

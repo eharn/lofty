@@ -1,3 +1,8 @@
+const home = document.querySelector('.home');
+    home.addEventListener("click", () => {
+      document.location.href = 'https://eharn.github.io/lofty/final/main.html';
+    })
+
 let birthdate = localStorage.getItem('birthdate');
 var time = new Date();
 var now = time.getTime();

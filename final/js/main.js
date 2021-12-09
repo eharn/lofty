@@ -1,4 +1,5 @@
-//import { getName } from "./utilities";
+
+
 const name = localStorage.getItem('name');
 if(!name){
     document.querySelector('#helloName').innerHTML = 'Good Morning';

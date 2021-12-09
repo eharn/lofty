@@ -1,3 +1,8 @@
+const home = document.querySelector('.home');
+    home.addEventListener("click", () => {
+      document.location.href = 'https://eharn.github.io/lofty/final/main.html';
+    })
+
 //grab button
 const askbutton = document.querySelector('#ask');
 // give images eventlisteners
