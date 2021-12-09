@@ -6,6 +6,10 @@
     margin: 0px;
 }
 
+button, input {
+    border-radius: 6px;
+}
+
 .house {
     padding: 0px;
     margin: 0px;
